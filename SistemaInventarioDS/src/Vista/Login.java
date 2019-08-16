@@ -5,12 +5,14 @@
  */
 package Vista;
 
+import Controlador.Controlador;
+
 /**
  *
  * @author allis
  */
 public class Login extends javax.swing.JFrame {
-
+    protected Controlador controlador;
     /**
      * Creates new form Login
      */
@@ -136,7 +138,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
-        
+        controlador = new Controlador(txrUser.getText(), txtPass.getPassword());
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     /**

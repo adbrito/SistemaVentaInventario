@@ -5,10 +5,17 @@
  */
 package Controlador;
 
+import Vista.Venta;
+
 /**
  *
  * @author allis
  */
 public class ControladorVendedor {
-    
+
+    public ControladorVendedor(String user, char[] contraseña) {
+        Venta venta = new Venta();
+        //venta.show();
+        venta.setVisible(true);
+    }
 }
