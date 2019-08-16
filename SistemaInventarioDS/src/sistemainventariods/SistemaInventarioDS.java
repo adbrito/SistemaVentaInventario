@@ -5,6 +5,11 @@
  */
 package sistemainventariods;
 
+import Modelo.Cotizacion;
+import Modelo.DetalleVenta;
+import Modelo.Producto;
+import Modelo.Vendedor;
+
 /**
  *
  * @author allis
@@ -15,7 +20,8 @@ public class SistemaInventarioDS {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
     }
     
 }
