@@ -62,8 +62,9 @@ public class Cliente extends Persona implements SentenciaSQL {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public boolean insertQuery(Connection conection, Cliente cliente) {
+    public boolean insertQuery(Cliente cliente) {
         try {
+            Connection conection=con.abrirConexion();
             Statement consulta = conection.createStatement();
             String query = "INSERT INTO Cliente (id_cliente, nombre, apellido, direccion, telefono, estado) "
                     + "VALUES('"+ cliente.getCedula()  + "','" + cliente.getNombre()+"','" 
@@ -81,5 +82,6 @@ public class Cliente extends Persona implements SentenciaSQL {
         return false;
 
     }
+
 
 }

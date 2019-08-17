@@ -31,7 +31,10 @@ public class Controlador {
             switch (user) {
                 case "Vendedor":
                     System.out.println("dentro del switch");
-                    ControladorVendedor controladorV= new ControladorVendedor(user, contraseña);
+                    ControladorVendedor V= new ControladorVendedor();
+                    V.mostrarPrincipal();
+                    
+                    
             }
         }
     }

@@ -17,7 +17,7 @@ public interface SentenciaSQL {
     public boolean selectQuery(ConexionBD sentencia);
     public boolean updateQuery(String sentencia);
     public boolean deleteQuery(String sentencia);
-    public boolean insertQuery(Connection conection, Cliente cliente);
+    public boolean insertQuery(Cliente cliente);
     
     
 }
