@@ -5,11 +5,15 @@
  */
 package Controlador;
 
+import Modelo.Busqueda;
 import Modelo.Cliente;
+import Vista.BusquedaNombre;
 import Vista.Principal;
 import Vista.RegistrarUser;
 import Vista.Venta;
 import com.mysql.jdbc.Connection;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -40,6 +44,16 @@ public class ControladorVendedor {
     }
     public void registroCliente(Cliente c){
         c.insertQuery(c);
+    }
+    
+    public void mostrarBusqueda(){
+        BusquedaNombre b = new BusquedaNombre();
+        b.setVisible(true);
+    }
+    
+    public void busquedaCat(String categoria,JTable j){
+        Busqueda b = new Busqueda();
+        b.busquedaCategoria(categoria,j);
     }
     
 }

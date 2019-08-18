@@ -61,7 +61,7 @@ public class Cliente extends Persona implements SentenciaSQL {
     public boolean deleteQuery(String sentencia) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    @Override
     public boolean insertQuery(Cliente cliente) {
         try {
             Connection conection=con.abrirConexion();

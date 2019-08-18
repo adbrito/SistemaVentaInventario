@@ -5,16 +5,19 @@
  */
 package Modelo;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author allis
  */
 public class Producto {
-    protected String codigo, nombre, descripcion,categoria,estado;
+    protected String nombre, descripcion,categoria;
     protected float precioAlXMayor, precio;
-    protected int cantExist;
+    protected int cantExist,codigo;
+    protected char estado;
 
-    public Producto(String codigo, String nombre, String descripcion, String categoria, String estado, float precioAlXMayor, float precio, int cantExist) {
+    public Producto(int codigo, String nombre, String descripcion, String categoria, char estado, float precioAlXMayor, float precio, int cantExist) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -25,11 +28,11 @@ public class Producto {
         this.cantExist = cantExist;
     }
 
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
@@ -57,11 +60,11 @@ public class Producto {
         this.categoria = categoria;
     }
 
-    public String getEstado() {
+    public char getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(char estado) {
         this.estado = estado;
     }
 
@@ -88,6 +91,12 @@ public class Producto {
     public void setCantExist(int cantExist) {
         this.cantExist = cantExist;
     }
+
+    @Override
+    public String toString() {
+        return "Producto{" + "nombre=" + nombre + ", descripcion=" + descripcion + ", categoria=" + categoria + ", estado=" + estado + ", precioAlXMayor=" + precioAlXMayor + ", precio=" + precio + ", cantExist=" + cantExist + ", codigo=" + codigo + '}';
+    }
+    
     
     
 }
