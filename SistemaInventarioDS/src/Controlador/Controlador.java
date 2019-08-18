@@ -19,11 +19,11 @@ public class Controlador {
     protected ValidaUsuario validaUser = new ValidaUsuario();
 
     public Controlador(String user, char[] contraseña) {
-        manejaControlador(user, contraseña);
+        manejaControlador(user,  contraseña);
     }
 
     public void manejaControlador(String user, char[] contraseña) {
-        boolean rol = validaUser.validar(user);
+        boolean rol = validaUser.validar(user,contraseña);
         System.out.println(rol);
         System.out.println("rol: " + rol);
         System.out.println("antes del switch");

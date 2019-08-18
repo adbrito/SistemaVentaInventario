@@ -5,6 +5,8 @@
  */
 package Modelo;
 
+import java.util.Arrays;
+
 /**
  *
  * @author allis
@@ -14,7 +16,9 @@ public class ValidaUsuario {
     
 
 
-    public boolean validar(String user) {
+    public boolean validar(String user, char[] contraseña) {
+        String convPas  = new String(contraseña);
+        System.out.println(convPas);
         System.out.println(user);
         switch (user) {
             case "Vendedor":
