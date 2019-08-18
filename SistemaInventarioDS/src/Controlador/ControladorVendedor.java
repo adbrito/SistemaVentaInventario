@@ -10,7 +10,7 @@ import Modelo.Cliente;
 import Vista.BusquedaCategoria;
 import Vista.BusquedaDescripcion;
 import Vista.BusquedaNombre;
-import Vista.Principal;
+import Vista.PrincipalV;
 import Vista.RegistrarUser;
 import Vista.Venta;
 import com.mysql.jdbc.Connection;
@@ -33,7 +33,7 @@ public class ControladorVendedor {
     }
 
     public void mostrarPrincipal() {
-        Principal p = new Principal();
+        PrincipalV p = new PrincipalV();
         p.setVisible(true);
     }
 
