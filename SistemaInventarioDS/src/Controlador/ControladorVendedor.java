@@ -8,6 +8,7 @@ package Controlador;
 import Modelo.Busqueda;
 import Modelo.Cliente;
 import Vista.BusquedaCategoria;
+import Vista.BusquedaDescripcion;
 import Vista.BusquedaNombre;
 import Vista.Principal;
 import Vista.RegistrarUser;
@@ -21,46 +22,63 @@ import javax.swing.table.DefaultTableModel;
  * @author allis
  */
 public class ControladorVendedor {
+
     protected Cliente c;
 
     public ControladorVendedor() {
-        
-      /*  Venta venta = new Venta();
+
+        /*  Venta venta = new Venta();
         //venta.show();
         venta.setVisible(true);*/
     }
-    
-    public void mostrarPrincipal(){
+
+    public void mostrarPrincipal() {
         Principal p = new Principal();
         p.setVisible(true);
     }
-    
-    public void mostrarRegistroCliente(){
+
+    public void mostrarRegistroCliente() {
         RegistrarUser r = new RegistrarUser();
         r.setVisible(true);
     }
-    public void mostrarVenta(){
+
+    public void mostrarVenta() {
         Venta venta = new Venta();
         venta.setVisible(true);
     }
-    public void registroCliente(Cliente c){
+
+    public void registroCliente(Cliente c) {
         c.insertQuery(c);
     }
-    
-    public void mostrarBusquedaNombre(){
+
+    public void mostrarBusquedaNombre() {
         BusquedaNombre b = new BusquedaNombre();
         b.setVisible(true);
     }
-    public void mostrarBusquedaCat(){
+
+    public void mostrarBusquedaCat() {
         BusquedaCategoria b = new BusquedaCategoria();
         b.setVisible(true);
     }
-    public void busquedaNombre(String nombre,JTable j){
-        Busqueda b = new Busqueda();
-        b.busquedaNombre(nombre,j);
+
+    public void mostrarBusquedaDescripcion() {
+        BusquedaDescripcion b = new BusquedaDescripcion();
+        b.setVisible(true);
     }
-    public void busquedaCat(String categoria,JTable j){
+
+    public void busquedaNombre(String nombre, JTable j) {
         Busqueda b = new Busqueda();
-        b.busquedaCategoria(categoria,j);
+        b.busquedaNombre(nombre, j);
     }
+
+    public void busquedaCat(String categoria, JTable j) {
+        Busqueda b = new Busqueda();
+        b.busquedaCategoria(categoria, j);
+    }
+
+    public void busquedaDescripcion(String descripcion, JTable j) {
+        Busqueda b = new Busqueda();
+        b.busquedaDescripcion(descripcion, j);
+    }
+
 }

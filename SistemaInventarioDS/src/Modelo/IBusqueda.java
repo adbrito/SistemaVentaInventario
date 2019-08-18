@@ -15,5 +15,5 @@ import javax.swing.table.DefaultTableModel;
 public interface IBusqueda {
     public void busquedaCategoria(String nombre, JTable table);
     public void busquedaNombre(String categoria, JTable table);
-    public void busquedaDescripcion(String descripcion);
+    public void busquedaDescripcion(String descripcion, JTable table);
 }
