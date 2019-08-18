@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
 public class Busqueda implements IBusqueda {
 
     @Override
-    public void busquedaCategoria(String categoria, JTable table) {
+    public void busquedaNombre(String categoria, JTable table) {
 
         try {
             LinkedList<Producto> lista = new LinkedList<Producto>();
@@ -78,7 +78,7 @@ public class Busqueda implements IBusqueda {
     }
 
     @Override
-    public void busquedaNombre(String nombre) {
+    public void busquedaCategoria(String categoria, JTable table) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

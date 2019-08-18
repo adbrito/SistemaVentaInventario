@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
  * @author allis
  */
 public interface IBusqueda {
-    public void busquedaCategoria(String categoria, JTable table);
-    public void busquedaNombre(String nombre);
+    public void busquedaCategoria(String nombre, JTable table);
+    public void busquedaNombre(String categoria, JTable table);
     public void busquedaDescripcion(String descripcion);
 }

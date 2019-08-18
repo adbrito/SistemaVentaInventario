@@ -53,7 +53,7 @@ public class ControladorVendedor {
     
     public void busquedaCat(String categoria,JTable j){
         Busqueda b = new Busqueda();
-        b.busquedaCategoria(categoria,j);
+        b.busquedaNombre(categoria,j);
     }
     
 }
