@@ -7,6 +7,7 @@ package Controlador;
 
 import Modelo.Busqueda;
 import Modelo.Cliente;
+import Vista.BusquedaCategoria;
 import Vista.BusquedaNombre;
 import Vista.Principal;
 import Vista.RegistrarUser;
@@ -46,14 +47,20 @@ public class ControladorVendedor {
         c.insertQuery(c);
     }
     
-    public void mostrarBusqueda(){
+    public void mostrarBusquedaNombre(){
         BusquedaNombre b = new BusquedaNombre();
         b.setVisible(true);
     }
-    
+    public void mostrarBusquedaCat(){
+        BusquedaCategoria b = new BusquedaCategoria();
+        b.setVisible(true);
+    }
+    public void busquedaNombre(String nombre,JTable j){
+        Busqueda b = new Busqueda();
+        b.busquedaNombre(nombre,j);
+    }
     public void busquedaCat(String categoria,JTable j){
         Busqueda b = new Busqueda();
-        b.busquedaNombre(categoria,j);
+        b.busquedaCategoria(categoria,j);
     }
-    
 }
