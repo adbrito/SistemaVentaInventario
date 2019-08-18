@@ -13,6 +13,7 @@ import Controlador.Controlador;
  */
 public class Login extends javax.swing.JFrame {
     protected Controlador controlador;
+    protected Login l;
     /**
      * Creates new form Login
      */
@@ -138,7 +139,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
-        controlador = new Controlador(txrUser.getText(), txtPass.getPassword());
+        controlador = new Controlador(txrUser.getText(), txtPass.getPassword(), l);
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     /**
