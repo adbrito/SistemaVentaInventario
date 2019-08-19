@@ -130,7 +130,7 @@ public class PrincipalA extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
-        System.err();
+        System.exit(0);
     }//GEN-LAST:event_jMenu3MouseClicked
 
     /**
