@@ -19,7 +19,7 @@ public class ConexionBD {
     public Connection abrirConexion() {
         if (cnx == null) {
             try {
-                Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/dbinventario", "root", "1234");
+                Connection cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:9000/dbinventario", "root", "test");
                 return cnx;
             } catch (SQLException ex) {
                 System.out.println("error en clase catch conexion"+ex);
