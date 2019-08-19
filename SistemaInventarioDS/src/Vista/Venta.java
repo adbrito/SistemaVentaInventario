@@ -144,7 +144,7 @@ public class Venta extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtNumVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumVentaActionPerformed
-        // TODO add your handling code here:
+    
     }//GEN-LAST:event_txtNumVentaActionPerformed
 
     /**
