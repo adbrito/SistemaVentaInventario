@@ -315,6 +315,14 @@ DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
 
+CREATE TABLE IF NOT EXISTS `dbinventario`.`usuario` (
+  `id_empleado` varchar(200) DEFAULT NULL,
+  `username` varchar(16) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

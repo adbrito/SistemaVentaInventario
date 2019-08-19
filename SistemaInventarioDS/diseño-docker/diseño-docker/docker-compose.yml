@@ -1,0 +1,25 @@
+version: "2"
+services:
+  db:
+      image: mysql
+      environment:
+          - MYSQL_ROOT_PASSWORD=test
+          - MYSQL_USER=user
+          - MYSQL_PASSWORD=user
+      ports:
+          - 9000:3306
+      volumes:
+          - ./sql:/docker-entrypoint-initdb.d
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: phpmyadmin
+      environment:
+          # - PMA_ARBITRARY=1
+          - PMA_HOST=db
+      restart: always
+      ports:
+          - 8080:80
+      volumes:
+          - /sessions
+      links:
+          - db
