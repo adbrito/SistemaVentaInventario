@@ -5,18 +5,19 @@
  */
 package Vista;
 
+import Controlador.ControladorGerente;
 import Controlador.ControladorVendedor;
 
 /**
  *
  * @author allis
  */
-public class BusquedaNombre extends javax.swing.JFrame {
+public class BusquedaNombre1 extends javax.swing.JFrame {
 
     /**
      * Creates new form BusquedaNombre
      */
-    public BusquedaNombre() {
+    public BusquedaNombre1() {
         initComponents();
     }
 
@@ -164,8 +165,8 @@ public class BusquedaNombre extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombreActionPerformed
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
-        ControladorVendedor v = new ControladorVendedor();
-        v.busquedaNombre(this.txtNombre.getText(), this.tableView);
+        ControladorGerente g = new ControladorGerente();
+        g.busquedaNombre(this.txtNombre.getText(), this.tableView);
     }//GEN-LAST:event_btnSearchActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
@@ -173,8 +174,8 @@ public class BusquedaNombre extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
-        ControladorVendedor v = new ControladorVendedor();
-        v.mostrarPrincipal();
+        ControladorGerente g = new ControladorGerente();
+        g.mostrarPrincipla();
         this.setVisible(false);
     }//GEN-LAST:event_btnReturnActionPerformed
 
@@ -195,20 +196,21 @@ public class BusquedaNombre extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BusquedaNombre.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BusquedaNombre1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BusquedaNombre.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BusquedaNombre1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BusquedaNombre.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BusquedaNombre1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BusquedaNombre.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BusquedaNombre1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new BusquedaNombre().setVisible(true);
+                new BusquedaNombre1().setVisible(true);
             }
         });
     }
