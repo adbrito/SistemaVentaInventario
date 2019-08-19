@@ -16,46 +16,87 @@ import javax.print.attribute.HashAttributeSet;
  *
  * @author allis
  */
-public class Repartidor extends Empleado {
+public class Repartidor extends Persona {
 
-    protected boolean vehiculoAsig;
-    protected int entregasAsig;
-    protected List<Envio> envioAsign;
-    protected HashMap<Repartidor, List<Envio>> listaPedido = new HashMap<>();
+    protected String vehiculoAsig; //matricula del carro que se le asignara 
+    protected RutaEntrega rutaAsig; //ruta que le asignara el jefe de bodega     
+    protected boolean disponible; //disponible u ocupado para saber si puede ser parte de la cola
+    protected float salario; //remuneracion calculada de acuerdo a la cantidad de envios exitosos
 
-    ;
-
-    public Repartidor(boolean vehiculoAsig, int entregasAsig, List<Envio> envioAsign, float sueldo, boolean estado, boolean tieneLocalAsignado, String numLocalAsignado, String nombre, String apellido, String direccion, String telefono, String cedula) {
-        super(sueldo, estado, tieneLocalAsignado, numLocalAsignado, nombre, apellido, direccion, telefono, cedula);
-        this.envioAsign = new ArrayList<>();
+    public Repartidor(String vehiculoAsig, RutaEntrega rutaAsig, boolean disponible, float salario, String nombre, String apellido, String direccion, String telefono, String cedula) {
+        super(nombre, apellido, direccion, telefono, cedula);
         this.vehiculoAsig = vehiculoAsig;
-        this.entregasAsig = entregasAsig;
+        this.rutaAsig = rutaAsig;
+        this.disponible = disponible;
+        this.salario = salario;
     }
 
-    public boolean isVehiculoAsig() {
+    public Repartidor(String nombre, String apellido, String direccion, String telefono, String cedula) {
+        super(nombre, apellido, direccion, telefono, cedula);
+        this.disponible = true; //empieza siendo disponible luego cuando lo utilicemos pasara a no estarlo y asi...
+        this.salario = 50;  //establecemos un salario inicial de 50 al que luego le adicionaremos segun la cantidad de envios que haya realizado con exito 
+    }
+              
+    public String getVehiculoAsig() {
         return vehiculoAsig;
     }
 
-    public void setVehiculoAsig(boolean vehiculoAsig) {
+    public void setVehiculoAsig(String vehiculoAsig) {
         this.vehiculoAsig = vehiculoAsig;
     }
 
-    public int getEntregasAsig() {
-        return entregasAsig;
+    public RutaEntrega getRutaAsig() {
+        return rutaAsig;
     }
 
-    public void setEntregasAsig(int entregasAsig) {
-        this.entregasAsig = entregasAsig;
+    public void setRutaAsig(RutaEntrega rutaAsig) {
+        this.rutaAsig = rutaAsig;
+    }
+           
+    public boolean isDisponible() {
+        return this.disponible;        
     }
 
-    public List<Envio> getEnvioAsign() {
-        return envioAsign;
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
     }
-
-    public void setEnvioAsign(List<Envio> envioAsign) {
-        this.envioAsign = envioAsign;
+        
+    public float calcularSalario(List<Envio> reporte) {
+        int c=0;
+        for (int i=0;i<reporte.size();i++) {
+            if (reporte.get(i).isFirmado()) 
+                c++;
+        }
+        return 50+c*50; //retornamos como salario total el valor inicial que establecimos sumado por $50 en cada envio exitoso (el numero puede cambiar)
     }
-
+    
+    
+//    
+//    public int getEntregasAsig() {
+//        return entregasAsig;
+//    }
+//
+//    public void setEntregasAsig(int entregasAsig) {
+//        this.entregasAsig = entregasAsig;
+//    }
+//
+//    public List<Envio> getPedidosAsign() {
+//        return pedidosAsig;
+//    }
+//
+//    public void setPedidosAsign(List<Envio> pedidosAsign) {
+//        this.pedidosAsig = pedidosAsign;
+//    }
+//
+//
+//    
+//    public void agregarEnvio(Envio envio) {
+//        this.pedidosAsig.add(envio);        
+//    }
+//    
+    
+    
+    /*
     public void asignarPedido(Repartidor repartido, Envio envio) {
         Iterator it = listaPedido.entrySet().iterator();
         while (it.hasNext()) {
@@ -76,7 +117,7 @@ public class Repartidor extends Empleado {
                 }
 
             }
-        }*/
+        }
     }
 
     public boolean buscarRepartidor(Repartidor repartidor) {
@@ -89,4 +130,8 @@ public class Repartidor extends Empleado {
         }
         return false;
     }
+
+    */
+
+
 }

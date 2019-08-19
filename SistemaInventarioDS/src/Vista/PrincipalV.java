@@ -6,6 +6,7 @@
 package Vista;
 
 import Controlador.ControladorVendedor;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -129,13 +130,13 @@ public class PrincipalV extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu1MouseClicked
 
     private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Funcionamiento en construcción", "Advertencia", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jMenu2MouseClicked
-
+    
     private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
-
+        
     }//GEN-LAST:event_jMenu4MouseClicked
-
+       
     private void jMenuItem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseClicked
 
     }//GEN-LAST:event_jMenuItem1MouseClicked
