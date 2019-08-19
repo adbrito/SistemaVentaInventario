@@ -34,7 +34,6 @@ public class Controlador {
                 case "VENDEDOR":
                     System.out.println("Bienvenido vendedor");
                     ControladorVendedor V = new ControladorVendedor();
-                    
                     V.mostrarPrincipal();
                     break;
                 case "GERENTE":
@@ -42,11 +41,15 @@ public class Controlador {
                     ControladorGerente g = new ControladorGerente();
                     g.mostrarPrincipla();
                     break;
+                case "JEFE_BODEGA":
+                    System.out.println("Bienvenido JEFE_BODEGA");
+                    ControladorJefeBodega JB = new ControladorJefeBodega();
+                    
+                    break;
             }
         } catch (Exception ex) {
             System.out.println("Error: "+ ex);
-            
-            JOptionPane.showMessageDialog(null, "Usuario no existe o no encontrado", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Usuario no existe o no se ha encontrado", "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
     }
 

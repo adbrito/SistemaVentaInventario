@@ -26,7 +26,7 @@ public class ValidaUsuario {
             String convPas = new String(contraseña);
             ConexionBD con = new ConexionBD();
             Connection conection = con.abrirConexion();
-            String query = "select rol from usuario where username ='" + user + "'and password='" + convPas + "';";
+            String query = "select id_empleado from usuario where username ='" + user + "'and password='" + convPas + "';";
             Statement consulta = conection.createStatement();
             System.out.println(query);
             

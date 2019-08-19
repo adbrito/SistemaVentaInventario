@@ -7,8 +7,11 @@ package Controlador;
 
 import Modelo.Busqueda;
 import Vista.BusquedaCategoria;
+import Vista.BusquedaCategoria1;
 import Vista.BusquedaDescripcion;
+import Vista.BusquedaDescripcion1;
 import Vista.BusquedaNombre;
+import Vista.BusquedaNombre1;
 import Vista.PrincipalG;
 import javax.swing.JTable;
 
@@ -25,17 +28,17 @@ public class ControladorGerente {
     
     
     public void mostrarBusquedaNombre() {
-        BusquedaNombre b = new BusquedaNombre();
+        BusquedaNombre1 b = new BusquedaNombre1();
         b.setVisible(true);
     }
 
     public void mostrarBusquedaCat() {
-        BusquedaCategoria b = new BusquedaCategoria();
+        BusquedaCategoria1 b = new BusquedaCategoria1();
         b.setVisible(true);
     }
 
     public void mostrarBusquedaDescripcion() {
-        BusquedaDescripcion b = new BusquedaDescripcion();
+        BusquedaDescripcion1 b = new BusquedaDescripcion1();
         b.setVisible(true);
     }
 
