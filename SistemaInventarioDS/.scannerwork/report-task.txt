@@ -2,5 +2,5 @@ projectKey=P01Grupo04
 serverUrl=http://200.126.12.164
 serverVersion=6.7.6.38781
 dashboardUrl=http://200.126.12.164/dashboard/index/P01Grupo04
-ceTaskId=AWyn38L6Lm5p6v1cuI0t
-ceTaskUrl=http://200.126.12.164/api/ce/task?id=AWyn38L6Lm5p6v1cuI0t
+ceTaskId=AWyn5ogDLm5p6v1cuI0w
+ceTaskUrl=http://200.126.12.164/api/ce/task?id=AWyn5ogDLm5p6v1cuI0w
