@@ -10,5 +10,8 @@ package Controlador;
  * @author allis
  */
 public class ControladorAdmin {
-    
+
+    public void mostrarPrincipal() {
+        
+    }
 }
