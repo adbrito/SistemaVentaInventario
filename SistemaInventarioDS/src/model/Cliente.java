@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelo;
+package model;
 
 import java.sql.*;
 import java.util.logging.Level;
@@ -65,15 +65,16 @@ public class Cliente extends Persona implements SentenciaSQL {
     public boolean insertQuery(Cliente cliente) {
         try {
             Connection conection=con.abrirConexion();
-            Statement consulta = conection.createStatement();
-            String query = "INSERT INTO Cliente (id_cliente, nombre, apellido, direccion, telefono, estado) "
-                    + "VALUES('"+ cliente.getCedula()  + "','" + cliente.getNombre()+"','" 
-                    +cliente.getApellido()+ "', '"+cliente.getDireccion()+"', '"+cliente.getTelefono()+"', 'A')";
-
-            // consulta = conexion.prepareStatement("UPDATE " + this.tabla + " SET titulo = ?, descripcion = ?, nivel_de_prioridad = ? WHERE id_tarea = ?");
-            System.out.println("deberia haber guardado en la base");
-            System.out.println(query);
-            consulta.executeUpdate(query);
+            try (Statement consulta = conection.createStatement()) {
+                String query = "INSERT INTO Cliente (id_cliente, nombre, apellido, direccion, telefono, estado) "
+                        + "VALUES('"+ cliente.getCedula()  + "','" + cliente.getNombre()+"','"
+                        +cliente.getApellido()+ "', '"+cliente.getDireccion()+"', '"+cliente.getTelefono()+"', 'A')";
+                
+                // consulta = conexion.prepareStatement("UPDATE " + this.tabla + " SET titulo = ?, descripcion = ?, nivel_de_prioridad = ? WHERE id_tarea = ?");
+                System.out.println("deberia haber guardado en la base");
+                System.out.println(query);
+                consulta.executeUpdate(query);
+            }
             return true;
         } catch (SQLException ex1) {
             System.out.println("error den exceptionsql de grabar" + ex1);

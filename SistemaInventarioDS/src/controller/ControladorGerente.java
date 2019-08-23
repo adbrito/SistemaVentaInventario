@@ -3,14 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controlador;
+package controller;
 
-import Modelo.Busqueda;
-import Vista.BusquedaCategoria;
+import model.Busqueda;
 import Vista.BusquedaCategoria1;
-import Vista.BusquedaDescripcion;
 import Vista.BusquedaDescripcion1;
-import Vista.BusquedaNombre;
 import Vista.BusquedaNombre1;
 import Vista.PrincipalG;
 import javax.swing.JTable;

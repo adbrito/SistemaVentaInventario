@@ -5,9 +5,9 @@
  */
 package Vista;
 
-import Controlador.ControladorVendedor;
-import Modelo.Cliente;
-import Modelo.ConexionBD;
+import controller.ControladorVendedor;
+import model.Cliente;
+import model.ConexionBD;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -3,13 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelo;
+package model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 /**
  *
@@ -66,71 +62,9 @@ public class Repartidor extends Persona {
             if (reporte.get(i).isFirmado()) 
                 c++;
         }
-        return 50+c*50; //retornamos como salario total el valor inicial que establecimos sumado por $50 en cada envio exitoso (el numero puede cambiar)
+        return (float) (50.00+c*50.00); //retornamos como salario total el valor inicial que establecimos sumado por $50 en cada envio exitoso (el numero puede cambiar)
     }
     
-    
-//    
-//    public int getEntregasAsig() {
-//        return entregasAsig;
-//    }
-//
-//    public void setEntregasAsig(int entregasAsig) {
-//        this.entregasAsig = entregasAsig;
-//    }
-//
-//    public List<Envio> getPedidosAsign() {
-//        return pedidosAsig;
-//    }
-//
-//    public void setPedidosAsign(List<Envio> pedidosAsign) {
-//        this.pedidosAsig = pedidosAsign;
-//    }
-//
-//
-//    
-//    public void agregarEnvio(Envio envio) {
-//        this.pedidosAsig.add(envio);        
-//    }
-//    
-    
-    
-    /*
-    public void asignarPedido(Repartidor repartido, Envio envio) {
-        Iterator it = listaPedido.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry e = (Map.Entry) it.next();
-            if (repartido.equals(e.getKey())) {
-
-            }
-        }
-        /*if (listaPedido.size() != 0) {
-            for (HashMap.Entry<Repartidor, List<Envio>> r : listaPedido.entrySet()) {
-                if (r.getKey().equals(repartido)) {
-                    List<Envio> lista = r.getValue();
-                    lista.add(envio);
-                    r.setValue(lista);
-                    
-                }else{
-                    
-                }
-
-            }
-        }
-    }
-
-    public boolean buscarRepartidor(Repartidor repartidor) {
-        Iterator it = listaPedido.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry e = (Map.Entry) it.next();
-            if (e.getKey().equals(repartidor)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    */
 
 
 }

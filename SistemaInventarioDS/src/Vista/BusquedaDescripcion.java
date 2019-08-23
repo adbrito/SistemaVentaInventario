@@ -5,7 +5,7 @@
  */
 package Vista;
 
-import Controlador.ControladorVendedor;
+import controller.ControladorVendedor;
 import javax.swing.JTable;
 
 /**

@@ -3,12 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controlador;
+package controller;
 
-import Modelo.Envio;
-import Modelo.JefeBodega;
-import Modelo.Repartidor;
-import Modelo.RutaEntrega;
+import model.Envio;
+import model.RutaEntrega;
 import Vista.PrincipalJB;
 import Vista.ReporteEnvio;
 import Vista.Ruta;

@@ -5,7 +5,7 @@
  */
 package Vista;
 
-import Controlador.ControladorJefeBodega;
+import controller.ControladorJefeBodega;
 
 /**
  *

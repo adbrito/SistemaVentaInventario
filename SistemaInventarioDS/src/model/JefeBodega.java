@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelo;
+package model;
 
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -40,16 +39,6 @@ public class JefeBodega {
         rep.setDisponible(false);
     }
     
-    /*
-    public void asignarRutaEntrega(Repartidor rep, List<Envio> pedidos) {        
-        RutaEntrega ruta = new RutaEntrega();
-        for (int i=0;i<pedidos.size();i++) {
-            ruta.agregarEnvio(pedidos.get(i));            
-        }
-        rep.setRutaAsig(ruta);
-        rep.setDisponible(false);
-    }
-*/
     
     public void recibirReporte(Repartidor rep, List<Envio> reporte) {
         for (int i=0;i<reporte.size();i++) {

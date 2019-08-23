@@ -3,17 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelo;
+package model;
 
 import com.mysql.jdbc.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTable;
@@ -39,7 +35,6 @@ public class Busqueda implements IBusqueda {
             System.out.println(query);
             ResultSet rs = consulta.executeQuery(query);
             System.out.println("el rs.next: " + rs.next());
-            System.out.println("antes del while");
             while (!rs.wasNull()) {
                 System.out.println("sout dentro del while: 1 ---->" + rs.getInt(1));
                 int cod = rs.getInt(1);
@@ -67,7 +62,7 @@ public class Busqueda implements IBusqueda {
                 System.out.println("entra al for");
                 table.setModel(tm);
             }
-
+            rs.close();
             // consulta = conexion.prepareStatement("UPDATE " + this.tabla + " SET titulo = ?, descripcion = ?, nivel_de_prioridad = ? WHERE id_tarea = ?");
         } catch (SQLException ex) {
             Logger.getLogger(Busqueda.class.getName()).log(Level.SEVERE, null, ex);
@@ -163,7 +158,7 @@ public class Busqueda implements IBusqueda {
                 System.out.println("entra al for");
                 table.setModel(tm);
             }
-
+            rs.close();
             // consulta = conexion.prepareStatement("UPDATE " + this.tabla + " SET titulo = ?, descripcion = ?, nivel_de_prioridad = ? WHERE id_tarea = ?");
         } catch (SQLException ex) {
             Logger.getLogger(Busqueda.class.getName()).log(Level.SEVERE, null, ex);

@@ -3,19 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controlador;
+package controller;
 
-import Modelo.Busqueda;
-import Modelo.Cliente;
+import model.Busqueda;
+import model.Cliente;
 import Vista.BusquedaCategoria;
 import Vista.BusquedaDescripcion;
 import Vista.BusquedaNombre;
 import Vista.PrincipalV;
 import Vista.RegistrarUser;
 import Vista.Venta;
-import com.mysql.jdbc.Connection;
 import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
 
 /**
  *

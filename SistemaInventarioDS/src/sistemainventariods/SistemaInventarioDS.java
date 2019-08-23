@@ -5,10 +5,10 @@
  */
 package sistemainventariods;
 
-import Modelo.Cotizacion;
-import Modelo.DetalleVenta;
-import Modelo.Producto;
-import Modelo.Vendedor;
+import model.Cotizacion;
+import model.DetalleVenta;
+import model.Producto;
+import model.Vendedor;
 
 /**
  *
