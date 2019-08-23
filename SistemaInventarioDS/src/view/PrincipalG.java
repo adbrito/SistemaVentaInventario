@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vista;
+package view;
 
 import controller.ControladorGerente;
-import controller.ControladorVendedor;
 import javax.swing.JOptionPane;
 
 /**

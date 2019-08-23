@@ -6,7 +6,7 @@
 package controller;
 
 import model.ValidaUsuario;
-import Vista.Login;
+import view.Login;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -19,13 +19,13 @@ public class Controlador {
     protected Login login;
     protected ValidaUsuario validaUser = new ValidaUsuario();
 
-    public Controlador(String user, char[] contraseña, JFrame f) {
-        manejaControlador(user, contraseña, f);
+    public Controlador(String user, char[] pass, JFrame f) {
+        manejaControlador(user, pass, f);
     }
 
-    public void manejaControlador(String user, char[] contraseña, JFrame f) {
+    public void manejaControlador(String user, char[] pass, JFrame f) {
         try {
-            String rol = validaUser.validar(user, contraseña);
+            String rol = validaUser.validar(user, pass);
             
             switch (rol.toUpperCase()) {
                 case "VENDEDOR":

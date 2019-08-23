@@ -25,7 +25,7 @@ public class Busqueda implements IBusqueda {
     public void busquedaNombre(String name, JTable table) {
 
         try {
-            LinkedList<Producto> lista = new LinkedList<Producto>();
+            LinkedList<Producto> lista = new LinkedList<>();
             DefaultTableModel tm = new DefaultTableModel();
             tm.setColumnCount(8);
             ConexionBD con = new ConexionBD();

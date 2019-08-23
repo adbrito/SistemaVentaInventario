@@ -6,10 +6,10 @@
 package controller;
 
 import model.Busqueda;
-import Vista.BusquedaCategoria1;
-import Vista.BusquedaDescripcion1;
-import Vista.BusquedaNombre1;
-import Vista.PrincipalG;
+import view.BusquedaCategoria1;
+import view.BusquedaDescripcion1;
+import view.BusquedaNombre1;
+import view.PrincipalG;
 import javax.swing.JTable;
 
 /**

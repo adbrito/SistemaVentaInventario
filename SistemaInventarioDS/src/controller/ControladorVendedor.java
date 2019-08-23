@@ -7,12 +7,12 @@ package controller;
 
 import model.Busqueda;
 import model.Cliente;
-import Vista.BusquedaCategoria;
-import Vista.BusquedaDescripcion;
-import Vista.BusquedaNombre;
-import Vista.PrincipalV;
-import Vista.RegistrarUser;
-import Vista.Venta;
+import view.BusquedaCategoria;
+import view.BusquedaDescripcion;
+import view.BusquedaNombre;
+import view.PrincipalV;
+import view.RegistrarUser;
+import view.Venta;
 import javax.swing.JTable;
 
 /**

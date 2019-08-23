@@ -7,9 +7,9 @@ package controller;
 
 import model.Envio;
 import model.RutaEntrega;
-import Vista.PrincipalJB;
-import Vista.ReporteEnvio;
-import Vista.Ruta;
+import view.PrincipalJB;
+import view.ReporteEnvio;
+import view.Ruta;
 
 /**
  *
