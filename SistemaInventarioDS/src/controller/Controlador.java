@@ -42,6 +42,9 @@ public final class Controlador {
                     ControladorJefeBodega jb = new ControladorJefeBodega();
                     jb.mostrarPrincipal();
                     break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Usuario no existe o no se ha encontrado", "Advertencia", JOptionPane.WARNING_MESSAGE);
+                    break;
             }
         } catch (Exception ex) {
             System.out.println("Error: "+ ex);
