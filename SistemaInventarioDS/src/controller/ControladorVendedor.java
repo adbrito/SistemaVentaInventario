@@ -22,8 +22,7 @@ import javax.swing.JTable;
 public class ControladorVendedor {
 
     protected Cliente c;
-
-
+    protected Busqueda bu = new Busqueda();
 
     public void mostrarPrincipal() {
         PrincipalV p = new PrincipalV();
@@ -60,18 +59,18 @@ public class ControladorVendedor {
     }
 
     public void busquedaNombre(String nombre, JTable j) {
-        Busqueda b = new Busqueda();
-        b.busquedaNombre(nombre, j);
+
+        bu.busquedaNombre(nombre, j);
     }
 
     public void busquedaCat(String categoria, JTable j) {
-        Busqueda b = new Busqueda();
-        b.busquedaCategoria(categoria, j);
+
+        bu.busquedaCategoria(categoria, j);
     }
 
     public void busquedaDescripcion(String descripcion, JTable j) {
-        Busqueda b = new Busqueda();
-        b.busquedaDescripcion(descripcion, j);
+
+        bu.busquedaDescripcion(descripcion, j);
     }
 
 }
