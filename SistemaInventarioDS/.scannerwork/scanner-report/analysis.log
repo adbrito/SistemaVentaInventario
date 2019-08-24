@@ -1,0 +1,32 @@
+SonarQube plugins:
+  - GitHub 1.4.2.1027 (github)
+  - SonarPython 1.8.0.1496 (python)
+  - Code Smells 4.0.0 (smells)
+  - GitHub Authentication for SonarQube 1.5.0.870 (authgithub)
+  - SonarQube :: Plugins :: SCM :: SVN 1.6.0.860 (scmsvn)
+  - SonarJS 3.2.0.5506 (javascript)
+  - SonarC# 6.5.0.3766 (csharp)
+  - SonarJava 5.13.0.18197 (java)
+  - Flex 2.3 (flex)
+  - Git 1.9.0.1725 (scmgit)
+  - SonarXML 1.4.3.1027 (xml)
+  - SonarPHP 2.11.0.2485 (php)
+  - SonarTS 1.1.0.1079 (typescript)
+Global properties:
+  - sonar.core.id=A7EE8CF2-AWtmz9pnmaj65Z_tQ1Yd
+  - sonar.core.startTime=2019-08-16T14:47:45-0500
+  - sonar.forceAuthentication=false
+Settings for module: P01Grupo04
+  - sonar.host.url=http://200.126.12.164
+  - sonar.java.binaries=build
+  - sonar.login=******
+  - sonar.password=******
+  - sonar.projectBaseDir=C:\Users\allis\Documents\Repo\Sistema de Inventario y ventas\SistemaVentaInventario\SistemaInventarioDS
+  - sonar.projectKey=P01Grupo04
+  - sonar.projectName=SistemaInventarioDS
+  - sonar.projectVersion=1.0
+  - sonar.scanner.app=ScannerCli
+  - sonar.scanner.appVersion=4.0.0.1744
+  - sonar.sourceEncoding=UTF-8
+  - sonar.sources=.
+  - sonar.working.directory=C:\Users\allis\Documents\Repo\Sistema de Inventario y ventas\SistemaVentaInventario\SistemaInventarioDS\.scannerwork
