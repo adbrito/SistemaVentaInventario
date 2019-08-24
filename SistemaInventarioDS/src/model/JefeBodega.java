@@ -13,14 +13,17 @@ import java.util.Queue;
  *
  * @author allis
  */
-public class JefeBodega {
+public class JefeBodega extends Empleado{
     
     protected Queue<Repartidor> colaRep;
-
-    public JefeBodega() {
+    
+    public JefeBodega(String nombre, String apellido, String direccion, String telefono, String cedula) {
+        super(nombre, apellido, direccion, telefono, cedula);
         this.colaRep = new LinkedList();
     }
-            
+    
+    
+    
     public Repartidor seleccionarRepartidor() {        
         Repartidor rep = this.colaRep.poll();
         rep.setDisponible(false);

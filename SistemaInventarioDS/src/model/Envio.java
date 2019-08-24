@@ -23,6 +23,16 @@ public class Envio {
         this.listaProductos = new HashMap<String, Integer>();
     }
 
+    public Envio(Persona destinatario, Repartidor repAsig, HashMap<String, Integer> listaProductos, boolean firmado, String msg) {
+        this.destinatario = destinatario;
+        this.repAsig = repAsig;
+        this.listaProductos = listaProductos;
+        this.firmado = firmado;
+        this.msg = msg;
+    }
+
+    
+    
     public Persona getDestinatario() {
         return destinatario;
     }
