@@ -23,7 +23,6 @@ public class ValidaUsuario {
             Connection conection = con.abrirConexion();
             String query = "select id_empleado from usuario where username ='" + user + "'and password='" + convPas + "';";
             Statement consulta = conection.createStatement();
-            System.out.println(query);
             
             ResultSet rs = consulta.executeQuery(query);
             System.out.println("rs.next : "+rs.next());
@@ -34,7 +33,7 @@ public class ValidaUsuario {
                 System.out.println("dentro del while "+rs.getString(1));
                 switch (rs.getString(1).toUpperCase()) {
                     case "VENDEDOR":
-                        System.out.println("entró al vendedor");
+                        
                         return rs.getString(1).toUpperCase();
                     case "JEFE_BODEGA":
                         return rs.getString(1).toUpperCase();
