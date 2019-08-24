@@ -79,7 +79,6 @@ public class Busqueda implements IBusqueda {
             Connection conection = con.abrirConexion();
             String query = "SELECT * FROM PRODUCTO WHERE categoria like '%" + categoria + "%';";
             Statement consulta = conection.createStatement();
-            System.out.println(query);
             ResultSet rs = consulta.executeQuery(query);
             System.out.println("el rs.next: " + rs.next());
             while (!rs.wasNull()) {
@@ -129,19 +128,18 @@ public class Busqueda implements IBusqueda {
             while (!rs.wasNull()) {
                 
                 int cod = rs.getInt(1);
-                System.out.println("sout dentro del while:2 " + rs.getString(2));
+                
                 String nombre = rs.getString(2);
-                System.out.println("sout dentro del while: 3" + rs.getString(3));
+                
                 String descripcion = rs.getString(3);
                 int cantExist = rs.getInt(4);
-                System.out.println("sout dentro del while: 4" + rs.getInt(4));
+                
                 String cat = rs.getString(5);
-                System.out.println("sout dentro del while: 5" + rs.getString(5));
+                
                 float precioAlXMayor = rs.getFloat(6);
                 float precio = rs.getFloat(7);
                 char estado = rs.getString(8).charAt(0);
                 Producto p = new Producto(cod, nombre, descripcion, cat, estado, precioAlXMayor, precio, cantExist);
-                System.out.println(p.toString());
                 lista.add(p);
                 if (!rs.next()) {
                     break;
@@ -150,7 +148,7 @@ public class Busqueda implements IBusqueda {
             for (int i = 0; i < lista.size(); i++) {
                 Object[] row = {lista.get(i).getCodigo(), lista.get(i).getNombre(), lista.get(i).getDescripcion(), lista.get(i).getCategoria(), lista.get(i).getCantExist(), lista.get(i).getPrecioAlXMayor(), lista.get(i).getPrecio(), lista.get(i).getEstado()};
                 tm.addRow(row);
-                System.out.println("entra al for");
+                
                 table.setModel(tm);
             }
             rs.close();
