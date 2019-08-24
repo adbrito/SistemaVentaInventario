@@ -30,13 +30,13 @@ public class Repartidor extends Persona {
         this.disponible = disponible;
         this.salario = salario;
     }
-
-    public Repartidor(String nombre, String apellido, String direccion, String telefono, String cedula) {
-        super(nombre, apellido, direccion, telefono, cedula);
-        this.disponible = true; //empieza siendo disponible luego cuando lo utilicemos pasara a no estarlo y asi...
-        this.salario = 50;  //establecemos un salario inicial de 50 al que luego le adicionaremos segun la cantidad de envios que haya realizado con exito 
-    }
-              
+//
+//    public Repartidor(String nombre, String apellido, String direccion, String telefono, String cedula) {
+//        super(nombre, apellido, direccion, telefono, cedula);
+//        this.disponible = true; //empieza siendo disponible luego cuando lo utilicemos pasara a no estarlo y asi...
+//        this.salario = 50;  //establecemos un salario inicial de 50 al que luego le adicionaremos segun la cantidad de envios que haya realizado con exito 
+//    }
+//              
     public String getVehiculoAsig() {
         return vehiculoAsig;
     }
@@ -60,16 +60,16 @@ public class Repartidor extends Persona {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
-        
-    public float calcularSalario(List<Envio> reporte) {
-        int c=0;
-        for (int i=0;i<reporte.size();i++) {
-            if (reporte.get(i).isFirmado()) 
-                c++;
-        }
-        return 50+c*50; //retornamos como salario total el valor inicial que establecimos sumado por $50 en cada envio exitoso (el numero puede cambiar)
-    }
-    
+//        
+//    public float calcularSalario(List<Envio> reporte) {
+//        int c=0;
+//        for (int i=0;i<reporte.size();i++) {
+//            if (reporte.get(i).isFirmado()) 
+//                c++;
+//        }
+//        return 50+c*50; //retornamos como salario total el valor inicial que establecimos sumado por $50 en cada envio exitoso (el numero puede cambiar)
+//    }
+//    
     
 //    
 //    public int getEntregasAsig() {

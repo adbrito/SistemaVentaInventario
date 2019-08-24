@@ -41,18 +41,18 @@ public class ControladorJefeBodega {
         e.agregarProducto(p, c);
     }
     
-    public void agregarPedido(String des, String dir) {
-        System.out.println("el pedido ha sido agregado: ");
-        System.out.println("Destino: "+des);
-        System.out.println("Direccion: "+dir);
-        System.out.println("Lista productos: "+ e.getListaProductos());
-    }      
-            
-    public void crearRuta() {
-        re.crearRuta();
-    }
-    
-    public void asignarRuta() {
-        re.asignarRuta();
-    }        
+//    public void agregarPedido(String des, String dir) {
+//        System.out.println("el pedido ha sido agregado: ");
+//        System.out.println("Destino: "+des);
+//        System.out.println("Direccion: "+dir);
+//        System.out.println("Lista productos: "+ e.getListaProductos());
+//    }      
+//            
+//    public void crearRuta() {
+//        re.crearRuta();
+//    }
+//    
+//    public void asignarRuta() {
+//        re.asignarRuta();
+//    }        
 }

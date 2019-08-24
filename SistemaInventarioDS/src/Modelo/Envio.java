@@ -71,13 +71,13 @@ public class Envio {
     
     public void agregarProducto(String p, int n) {        
         this.getListaProductos().put(p, n);
-        System.out.println(this.getListaProductos());
+//        System.out.println(this.getListaProductos());
     }
-            
-    public void verificarEnvio(String nombre, String dir) {                
-        System.out.println("El envio coincide ");
-    }
-    
+//            
+//    public void verificarEnvio(String nombre, String dir) {                
+//        System.out.println("El envio coincide ");
+//    }
+//    
     
     
 }

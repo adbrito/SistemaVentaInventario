@@ -20,7 +20,12 @@ public class RutaEntrega {
         this.entregasAsig = 0;
         this.pedidosAsig = new ArrayList<>();
     }
-       
+
+    public RutaEntrega(int entregasAsig, List<Envio> pedidosAsig) {
+        this.entregasAsig = entregasAsig;
+        this.pedidosAsig = pedidosAsig;
+    }
+             
     public void agregarEnvio(Envio envio) {        
         this.pedidosAsig.add(envio);
         this.entregasAsig+=1;
@@ -42,15 +47,15 @@ public class RutaEntrega {
         this.pedidosAsig = pedidosAsig;
     }
 
-    public void crearRuta() {
-        
-        System.out.println("ruta creada y repartidor escogido");
-    }
+//    public void crearRuta() {
+//        
+//        System.out.println("ruta creada y repartidor escogido");
+//    }
 
-    public void asignarRuta() {
-        for(int i=0;i<this.entregasAsig;i++) {
-            System.out.println(i+"° entrega: ");
-            System.out.println(this.pedidosAsig.get(i));
-        }        
-    }
+//    public void asignarRuta() {
+//        for(int i=0;i<this.entregasAsig;i++) {
+//            System.out.println(i+"° entrega: ");
+//            System.out.println(this.pedidosAsig.get(i));
+//        }        
+//    }
 }

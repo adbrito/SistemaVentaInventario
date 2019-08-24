@@ -230,21 +230,21 @@ public class Ruta extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAgregarProductoMouseClicked
 
     private void btnAgregarPedidoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarPedidoMouseClicked
-        String des = this.txtDestinatario.getText();
-        String dir = this.txtDireccion.getText();
-        c.agregarPedido(des, dir);
-        this.txtDestinatario.setText("");
-        this.txtDireccion.setText("");
-        this.txtCantidad.setText("");
-        this.txtProducto.setText("");        
+//        String des = this.txtDestinatario.getText();
+//        String dir = this.txtDireccion.getText();
+//        c.agregarPedido(des, dir);
+//        this.txtDestinatario.setText("");
+//        this.txtDireccion.setText("");
+//        this.txtCantidad.setText("");
+//        this.txtProducto.setText("");        
     }//GEN-LAST:event_btnAgregarPedidoMouseClicked
 
     private void btnCrearRutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCrearRutaMouseClicked
-        c.crearRuta();
+        //c.crearRuta();
     }//GEN-LAST:event_btnCrearRutaMouseClicked
 
     private void btnAsignarRutaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAsignarRutaMouseClicked
-        c.asignarRuta();
+        //c.asignarRuta();
     }//GEN-LAST:event_btnAsignarRutaMouseClicked
 
     /**
