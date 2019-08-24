@@ -5,11 +5,6 @@
  */
 package model;
 
-import java.util.List;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,17 +13,16 @@ import static org.junit.Assert.*;
  * @author allis
  */
 public class RutaEntregaTest {
-    
+
     public RutaEntregaTest() {
     }
-    
-    
+
     //verificar si una ruta de entrega al crearse como nueva es diferente a null
     @Test
-    public void testCreaRepartidor(){        
-    RutaEntrega re = new RutaEntrega();
-    assertNotNull(re);
-            
+    public void testCreaRepartidor() {
+        RutaEntrega re = new RutaEntrega();
+        assertNotNull(re);
+
     }
 ////    @BeforeClass
 ////    public static void setUpClass() {
@@ -136,5 +130,5 @@ public class RutaEntregaTest {
 ////        // TODO review the generated test code and remove the default call to fail.
 ////        fail("The test case is a prototype.");
 ////    }
-    
+
 }

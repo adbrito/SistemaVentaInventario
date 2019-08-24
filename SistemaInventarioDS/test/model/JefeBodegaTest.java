@@ -5,11 +5,6 @@
  */
 package model;
 
-import java.util.List;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,16 +13,16 @@ import static org.junit.Assert.*;
  * @author allis
  */
 public class JefeBodegaTest {
-        
+
     public JefeBodegaTest() {
     }
-    
+
     //Crear y verificar que se crea correctamente el jefe de bodega
     @Test
-    public void testCreaJefeBodega(){        
-    JefeBodega jb = new JefeBodega("Alejandro", "Garcia", "Nuevo Leon", "0999958050", "0927363320" );
-    assertNotNull(jb);
-            
+    public void testCreaJefeBodega() {
+        JefeBodega jb = new JefeBodega("Alejandro", "Garcia", "Nuevo Leon", "0999958050", "0927363320");
+        assertNotNull(jb);
+
     }
 ////    
 ////    @BeforeClass
@@ -47,8 +42,8 @@ public class JefeBodegaTest {
 ////    }
 
     /**
-     * Test of seleccionarRepartidor method, of class JefeBodega.
-////     */
+     * Test of seleccionarRepartidor method, of class JefeBodega. ////
+     */
 ////    @Test
 ////    public void testSeleccionarRepartidor() {
 ////        System.out.println("seleccionarRepartidor");
@@ -100,5 +95,4 @@ public class JefeBodegaTest {
 ////        // TODO review the generated test code and remove the default call to fail.
 ////        fail("The test case is a prototype.");
 ////    }
-    
 }

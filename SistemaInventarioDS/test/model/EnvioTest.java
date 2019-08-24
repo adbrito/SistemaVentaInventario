@@ -18,18 +18,18 @@ import static org.junit.Assert.*;
  * @author allis
  */
 public class EnvioTest {
-    
+
     public EnvioTest() {
     }
-    
+
     //Se verifica que la funcion para comprobar el estado entregado de un envio funcione adecuadamente
     @Test
-    public void testIsFirmado(){
-    Envio e = new Envio();
-    e.hacerFirmar();
-    boolean val = e.isFirmado();
-    assertTrue(val);
-            
+    public void testIsFirmado() {
+        Envio e = new Envio();
+        e.hacerFirmar();
+        boolean val = e.isFirmado();
+        assertTrue(val);
+
     }
 //    
 //    @BeforeClass
@@ -208,5 +208,5 @@ public class EnvioTest {
 //        // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
 //    }
-    
+
 }
