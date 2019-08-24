@@ -7,31 +7,30 @@ package controller;
 
 import model.ValidaUsuario;
 import view.Login;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author allis
  */
-public class Controlador {
+public final class Controlador {
 
     protected Login login;
     protected ValidaUsuario validaUser = new ValidaUsuario();
 
-    public Controlador(String user, char[] pass, JFrame f) {
-        manejaControlador(user, pass, f);
+    public Controlador(String user, char[] pass) {
+        manejaControlador(user, pass);
     }
 
-    public void manejaControlador(String user, char[] pass, JFrame f) {
+    public void manejaControlador(String user, char[] pass) {
         try {
             String rol = validaUser.validar(user, pass);
             
             switch (rol.toUpperCase()) {
                 case "VENDEDOR":
                     
-                    ControladorVendedor V = new ControladorVendedor();
-                    V.mostrarPrincipal();
+                    ControladorVendedor v = new ControladorVendedor();
+                    v.mostrarPrincipal();
                     break;
                 case "GERENTE":
                     
@@ -40,8 +39,8 @@ public class Controlador {
                     break;
                 case "JEFE_BODEGA":
                     
-                    ControladorJefeBodega JB = new ControladorJefeBodega();
-                    
+                    ControladorJefeBodega jb = new ControladorJefeBodega();
+                    jb.mostrarPrincipal();
                     break;
             }
         } catch (Exception ex) {

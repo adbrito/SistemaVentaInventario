@@ -23,12 +23,7 @@ public class ControladorVendedor {
 
     protected Cliente c;
 
-    public ControladorVendedor() {
 
-        /*  Venta venta = new Venta();
-        //venta.show();
-        venta.setVisible(true);*/
-    }
 
     public void mostrarPrincipal() {
         PrincipalV p = new PrincipalV();

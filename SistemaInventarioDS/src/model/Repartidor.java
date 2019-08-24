@@ -18,13 +18,7 @@ public class Repartidor extends Persona {
     protected boolean disponible; //disponible u ocupado para saber si puede ser parte de la cola
     protected float salario; //remuneracion calculada de acuerdo a la cantidad de envios exitosos
 
-    public Repartidor(String vehiculoAsig, RutaEntrega rutaAsig, boolean disponible, float salario, String nombre, String apellido, String direccion, String telefono, String cedula) {
-        super(nombre, apellido, direccion, telefono, cedula);
-        this.vehiculoAsig = vehiculoAsig;
-        this.rutaAsig = rutaAsig;
-        this.disponible = disponible;
-        this.salario = salario;
-    }
+    
 
     public Repartidor(String nombre, String apellido, String direccion, String telefono, String cedula) {
         super(nombre, apellido, direccion, telefono, cedula);

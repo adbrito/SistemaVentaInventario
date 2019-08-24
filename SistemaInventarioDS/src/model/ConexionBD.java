@@ -15,12 +15,11 @@ import java.sql.*;
 public class ConexionBD {
 
     private Connection cnx;
-  //  private final String pass  = "test";
 
     public Connection abrirConexion() {
 
         try {
-           // cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:9000/dbinventario", "root", pass);
+           // cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:9000/dbinventario", "root", "test");
            cnx = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/dbinventario", "root", "1234");
             return cnx;
         } catch (SQLException ex) {

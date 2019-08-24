@@ -73,9 +73,6 @@ public class Envio {
         System.out.println(this.getListaProductos());
     }
             
-    public void verificarEnvio(String nombre, String dir) {                
-        System.out.println("El envio coincide ");
-    }
     
     
     

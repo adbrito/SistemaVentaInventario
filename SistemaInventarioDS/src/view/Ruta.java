@@ -232,7 +232,6 @@ public class Ruta extends javax.swing.JFrame {
     private void btnAgregarPedidoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarPedidoMouseClicked
         String des = this.txtDestinatario.getText();
         String dir = this.txtDireccion.getText();
-        c.agregarPedido(des, dir);
         this.txtDestinatario.setText("");
         this.txtDireccion.setText("");
         this.txtCantidad.setText("");

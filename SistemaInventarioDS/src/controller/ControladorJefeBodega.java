@@ -18,7 +18,6 @@ import view.Ruta;
 public class ControladorJefeBodega {        
     Envio e = new Envio();
     RutaEntrega re = new RutaEntrega();
-    //JefeBodega jb = new JefeBodega();
     
     public void mostrarPrincipal() {
         PrincipalJB j = new PrincipalJB();
@@ -38,14 +37,7 @@ public class ControladorJefeBodega {
     public void agregarProducto(String p, int c) {        
         e.agregarProducto(p, c);
     }
-    
-    public void agregarPedido(String des, String dir) {
-        System.out.println("el pedido ha sido agregado: ");
-        System.out.println("Destino: "+des);
-        System.out.println("Direccion: "+dir);
-        System.out.println("Lista productos: "+ e.getListaProductos());
-    }      
-            
+                
     public void crearRuta() {
         re.crearRuta();
     }
